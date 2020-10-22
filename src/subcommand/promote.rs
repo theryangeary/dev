@@ -52,10 +52,6 @@ pub enum Error {
     #[error("no such file: {0}")]
     NoSuchFile(PathBuf),
 
-    /// The specified path is not a file
-    #[error("not a file: {0}")]
-    NotFile(PathBuf),
-
     /// The given path is not a rust source file
     #[error("not a rust source file: {0}")]
     NotRustSource(PathBuf),
